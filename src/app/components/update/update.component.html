@@ -1,0 +1,53 @@
+<form>
+    <h1>ATUALIZANDO O RELATÓRIO</h1>
+
+    <mat-form-field class="data-finalizar" appearance="fill">
+        <mat-label>DATA PARA FINALIZAR</mat-label>
+        <input [(ngModel)]="todo.dataParaFinalizar" name="todo.dataParaFinalizar" matInput [matDatepicker]="dp3" disabled>
+        <mat-hint>MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle matSuffix [for]="dp3"></mat-datepicker-toggle>
+        <mat-datepicker #dp3 disabled="false"></mat-datepicker>
+    </mat-form-field>
+
+    <div class="forms">
+        <mat-form-field class="form">
+            <mat-label>Nome do Cliente</mat-label>
+            <input [(ngModel)]="todo.nomeDoCliente" name="todo.nomeDoCliente" matInput placeholder="Ex. Vagner">
+        </mat-form-field>
+
+        <mat-form-field class="form">
+            <mat-label>Descrição do Produto</mat-label>
+            <input [(ngModel)]="todo.descricaoDoProduto" name="todo.descricaoDoProduto" matInput placeholder="Ex. Arruela Especial">
+        </mat-form-field>
+
+        <mat-form-field class="form">
+            <mat-label>Código da Peça</mat-label>
+            <input [(ngModel)]="todo.codigoDaPeca" name="todo.codigoDaPeca" matInput placeholder="Ex. 123">
+        </mat-form-field>
+
+        <mat-form-field class="form">
+            <mat-label>Número do Pedido</mat-label>
+            <input [(ngModel)]="todo.numeroDoPedido" name="todo.numeroDoPedido" matInput placeholder="Ex. 999">
+        </mat-form-field>
+
+        <mat-form-field class="form">
+            <mat-label>Status</mat-label>
+            <input [(ngModel)]="todo.status" name="todo.status" matInput placeholder="Ex. Arruela Especial">
+        </mat-form-field>
+
+        <mat-form-field class="form">
+            <mat-label>Responsável</mat-label>
+            <input [(ngModel)]="todo.responsavel" name="todo.responsavel" matInput placeholder="Ex. Engenheiro André">
+        </mat-form-field>
+
+        <mat-form-field class="form">
+            <mat-label>Ordem de Produção</mat-label>
+            <input [(ngModel)]="todo.ordemDeProducao" name="todo.ordemDeProducao" matInput placeholder="Ex. 001">
+        </mat-form-field>
+    </div>
+
+    <div class="buttons">
+        <button (click)="update()" mat-raised-button color="primary">ATUALIZAR</button>
+        <button (click)="cancel()" mat-raised-button color="warn">CANCELAR</button>
+    </div>
+</form>

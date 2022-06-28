@@ -1,0 +1,8 @@
+.footer {
+    height: 6%;
+    position: fixed;
+    bottom: 0;
+    justify-content: flex-end;
+    font-size: 1.2rem;
+    background-color: #FFC107;
+}

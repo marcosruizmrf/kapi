@@ -1,0 +1,67 @@
+.container {
+    width: 85%;
+    margin: auto;
+    color: rgb(114, 111, 111);
+}
+
+.badge {
+    margin-top: 3rem;
+    justify-content: center;
+}
+
+.badge {
+    margin-left: -1rem;
+    justify-content: center;
+    display: flex;
+}
+
+.badge button {
+    margin-left: 2rem;
+    margin: auto;
+    width: 15%;
+    margin: 0 100px;
+}
+
+.note-contents {
+    margin-top: 0rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    width: 100%;
+    padding-bottom: 4%;
+}
+
+.novo-todo {
+    width: 15%;
+    margin-top: 3rem;
+    margin-bottom: 0;
+}
+
+.mat-card {
+    margin-top: .9rem;
+    height: auto;
+    padding: .5rem;
+    color: #FFC107;
+}
+
+.h3 {
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    text-align: end;
+    font-weight: 600;
+    color: rgb(114, 111, 111);
+    margin-bottom: 0;
+}
+
+.actions {
+    text-align: end;
+}
+
+.actions button {
+    margin: .5rem;
+}
